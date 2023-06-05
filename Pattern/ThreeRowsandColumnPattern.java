@@ -34,4 +34,21 @@ public class ThreeRowsandColumnPattern {
             i++;
         }
     }
+    public static void DoWhile(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of rows and columns");
+        int num = sc.nextInt();
+        sc.close(); // Close the scanner after reading input
+
+        int i = 0;
+        do {
+            int j = 0;
+            do {
+                System.out.print("*");
+                j++;
+            } while (j < num);
+            System.out.println();
+            i++;
+        } while (i < num);
+    }
 }
