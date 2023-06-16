@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class ThreeRowsandColumnPattern {
     public static void main(String[] args) {
-        ForLoop(args);
-        WhileLoop(args);
-        Pattern2(args);
+        // ForLoop(args);
+        // WhileLoop(args);
+        // Pattern2(args);
+        // Pattern3(args);
+        Pattern4(args);
     }
 
     public static void ForLoop(String[] args) {
@@ -89,4 +91,46 @@ public class ThreeRowsandColumnPattern {
             i++;
         }
     }
+
+    public static void Pattern3(String[] args) {
+            //   (j=1)   (j=2)     (j=3)
+        // (i=1) => 1     2          3
+        // (i=2) => 1     2          3
+        // (i=3) => 1     2          3
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number For Pattern");
+        int num = sc.nextInt();
+        int i=1;
+        while(i<=num){
+        int j = 1;
+        while(j<=num){
+           System.out.print(j);
+           j++;
+        }
+        System.out.println("");
+         i++;
+    }
+    }
+    public static void Pattern4(String[] args) {
+            //   (j=1)   (j=2)     (j=3)
+        // (i=1) => 1     2          3
+        // (i=2) => 1     2          3
+        // (i=3) => 1     2          3
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number For Pattern");
+        int num = sc.nextInt();
+        int i=num;
+        while(i>=num){
+        int j = num;
+        while(j>=num){
+           System.out.print(j);
+           j--;
+        }
+        System.out.println("");
+         i--;
+    }
+    }
+
 }
